@@ -1,0 +1,406 @@
+/**
+start general variable
+*/
+/**
+end general variable
+*/
+/**
+google font work sans
+*/
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap");
+/* mobile */
+@media (max-width: 767px) {
+  .about {
+    text-align: center;
+  }
+  .about .about-img {
+    position: relative;
+    width: 250px;
+  }
+}
+/* Small */
+@media (min-width: 768px) {
+  .about {
+    text-align: center;
+  }
+  .about .about-img {
+    position: relative;
+    width: 250px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .about-img {
+    position: relative;
+    width: 250px;
+  }
+  .about-img:before {
+    content: "";
+    position: absolute;
+    background-color: #ebeced;
+    width: 100px;
+    height: calc(100% + 80px);
+    top: -40px;
+    left: -20px;
+    z-index: -1;
+  }
+  .about-img:after {
+    top: -40px;
+    content: "";
+    position: absolute;
+    width: 170px;
+    height: 360px;
+    border-left: 100px solid #10cab7;
+    border-bottom: 80px solid #10cab7;
+    z-index: -1;
+    right: -100px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .about-img {
+    position: relative;
+    width: 250px;
+  }
+  .about-img:before {
+    content: "";
+    position: absolute;
+    background-color: #ebeced;
+    width: 100px;
+    height: calc(100% + 80px);
+    top: -40px;
+    left: -20px;
+    z-index: -1;
+  }
+  .about-img:after {
+    top: -40px;
+    content: "";
+    position: absolute;
+    width: 170px;
+    height: 360px;
+    border-left: 100px solid #10cab7;
+    border-bottom: 80px solid #10cab7;
+    z-index: -1;
+    right: -100px;
+  }
+}
+/**
+start general style
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  text-transform: capitalize;
+  color: #000;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/**
+end general style
+*/
+/**
+start header
+*/
+.header .logo {
+  font-size: 2rem;
+}
+.header .logo a {
+  font-weight: 900;
+}
+.header .logo a span {
+  color: #10cab7;
+}
+.header .nav-btn {
+  position: relative;
+  cursor: pointer;
+}
+.header .nav-btn .icon {
+  width: 30px;
+}
+.header .nav-btn .icon span {
+  background-color: #333;
+  margin-bottom: 5px;
+  height: 2px;
+}
+.header .nav-btn .icon span:first-child {
+  width: 100%;
+}
+.header .nav-btn .icon span:last-child {
+  width: 100%;
+}
+.header .nav-btn .icon span:nth-child(2) {
+  width: 60%;
+  transition: 0.3s;
+}
+.header .nav-btn ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+  position: absolute;
+  right: 0;
+  min-width: 200px;
+  top: calc(100% + 15px);
+  display: none;
+  z-index: 1;
+}
+.header .nav-btn ul:before {
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #f6f6f6 transparent;
+  position: absolute;
+  right: 5px;
+  top: -20px;
+}
+.header .nav-btn ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+.header .nav-btn ul li a:hover {
+  padding-left: 25px;
+}
+.header .nav-btn ul li:not(:last-child) a {
+  border-bottom: 1px solid #ddd;
+}
+.header .nav-btn:hover ul {
+  display: block;
+}
+.header .nav-btn .icon:hover span:nth-child(2) {
+  width: 100%;
+}
+
+/**
+end header
+*/
+/**
+start intro img
+*/
+.intro-img {
+  background: url("../imgs/landing.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+.intro-img .intro-text {
+  width: 315px;
+}
+.intro-img .intro-text h2 {
+  color: #10cab7;
+  font-weight: 900;
+  font-size: 3.5rem;
+  word-spacing: -10px;
+}
+.intro-img .intro-text p {
+  line-height: 1.8;
+}
+
+/**
+end intro img
+*/
+/**
+start features
+*/
+.features {
+  background-color: #f6f6f6;
+}
+.features .feature-box i {
+  font-size: 4rem;
+  color: #10cab7;
+  font-weight: 900;
+}
+.features .feature-box h3 {
+  font-weight: 800;
+}
+
+/**
+end features
+*/
+/**
+start services
+*/
+.services .header h3 {
+  color: #ebeced;
+  font-size: 8rem;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -5px;
+  margin: 0;
+}
+.services .header p {
+  margin: -45px 0 0;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #797979;
+}
+.services .box-service i {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #10cab7;
+}
+.services .box-service h3 {
+  font-weight: 800;
+}
+.services .box-service p {
+  line-height: 1.8;
+}
+.services .box-service-img {
+  height: 450px;
+  width: 65%;
+}
+.services .box-service-img div {
+  background: url("../imgs/services.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: relative;
+}
+.services .box-service-img div::after {
+  content: "";
+  background-color: #2c4755;
+  width: 100px;
+  height: calc(100% + 100px);
+  top: -50px;
+  position: absolute;
+  right: -50px;
+  z-index: -1;
+}
+
+/**
+end services
+*/
+/**
+start portfolio
+*/
+.portfolio {
+  background-color: #f6f6f6;
+}
+.portfolio .header h3 {
+  color: #ebeced;
+  font-size: 8rem;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -5px;
+  margin: 0;
+}
+.portfolio .header p {
+  margin: -45px 0 0;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #797979;
+}
+.portfolio .card .card-body h4 {
+  font-weight: 900;
+}
+.portfolio .card .card-body p {
+  line-height: 1.8;
+}
+
+/**
+end portfolio
+*/
+/**
+start about
+ */
+.about .header h3 {
+  color: #ebeced;
+  font-size: 8rem;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -5px;
+  margin: 0;
+}
+.about .header p {
+  margin: -45px 0 0;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #797979;
+}
+.about img {
+  width: 100%;
+}
+.about .about-text p:first-child {
+  margin-top: 12%;
+  font-weight: 800;
+}
+.about hr {
+  width: 50%;
+  display: inline-block;
+  background-color: #10cab7;
+  height: 5px;
+  margin-top: 5%;
+}
+
+/**
+end about
+ */
+/**
+start contact
+ */
+.contact {
+  background-color: #f6f6f6;
+}
+.contact .header h3 {
+  color: #ebeced;
+  font-size: 8rem;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -5px;
+  margin: 0;
+}
+.contact .header p {
+  margin: -45px 0 0;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #797979;
+}
+.contact .contact-text h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #2c4755;
+  letter-spacing: -2px;
+  margin-bottom: 15px;
+}
+.contact .contact-text a {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #10cab7;
+  text-decoration: none;
+}
+.contact .contact-text i {
+  font-size: 1rem;
+  cursor: pointer;
+  color: #2c4755;
+}
+
+/**
+end contact
+ */
+/**
+start footer
+ */
+footer {
+  background-color: #2c4755;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+/**
+start footer
+ */
+
+/*# sourceMappingURL=site.css.map */
